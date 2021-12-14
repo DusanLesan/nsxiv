@@ -80,7 +80,7 @@ version.h: Makefile .git/index
 .git/index:
 
 clean:
-	rm -f *.o nsxiv version.h
+	rm -f *.o nsxiv version.h config.h
 
 install-all: install install-desktop install-icon
 
@@ -119,6 +119,7 @@ install: all
 	mkdir -p $(DESTDIR)$(EGPREFIX)
 	cp examples/* $(DESTDIR)$(EGPREFIX)
 	chmod 755 $(DESTDIR)$(EGPREFIX)/*
+	rm -f *.o nsxiv version.h config.h
 
 uninstall: uninstall-icon
 	@echo "REMOVE bin/nsxiv"
