@@ -13,5 +13,5 @@ This is fork of nsxiv with the purpose to merge some of the patches into the app
 
 Patches
 --------
-* 
+* alpha
 
